@@ -2,9 +2,9 @@ import React,{useState} from "react";
 
 const Hoc = props => {
     const [todos, setTodos] = useState([
-        { task: "Learn about React",status: 0},
-        { task: "Meet friend for lunch",status: 1},
-        { task: "Build really cool todo app",status: 0}
+        { task: "Read the ticket!",status: 0},
+        { task: "Go through the task.",status: 1},
+        { task: "Code and coffee!!",status: 0}
       ]);
 
       const deleteTask = id => {

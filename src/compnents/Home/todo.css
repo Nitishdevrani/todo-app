@@ -21,14 +21,37 @@ h1{
 .task{
     display: flex;
     justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
     /* width: 40vw; */
 }
 .taskCheck{
-    width: 20%;
+    width: 20px;
+    height: 20px;
 }
 .taskDetail{
     width: 60%;
 }
 .taskDelete{
-    width: 20%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border:none;
+    box-shadow: -1px 1px 2px black;
+}
+.taskDelete:hover{
+    background-color: red;
+    color: white;
+}
+/* for create task */
+.input{
+    height: 50px;
+    width: 60%;
+    outline: none;
+    border: none;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 10px;
+    box-shadow: -1px 1px 2px black;
+    font-size: 1.2rem;
+    text-align: center;
 }

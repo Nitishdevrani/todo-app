@@ -16,6 +16,7 @@ const CreateTodo = (props) => {
           type="text"
           className="input"
           value={text}
+          placeholder="Add a task!!"
           onChange={e => setText(e.target.value)}
         />
       </form>

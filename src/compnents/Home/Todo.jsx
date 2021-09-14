@@ -6,7 +6,7 @@ const Todo = (props) => {
     return(
         <div className="todoBody">
             <CreateTodo  create={props.create}/>
-            <div className="">
+            <>
                 {props.list.map(k=>{
                     let key = props.list.indexOf(k)
         return (
@@ -20,11 +20,11 @@ const Todo = (props) => {
 
         <span className="taskDetail">{k.status?<del>{k.task}</del>:k.task}</span>
 
-        <button className="taskDelete" onClick={(()=>{props.delete(key)})}>Delete</button>
+        <button className="taskDelete" onClick={(()=>{props.delete(key)})}>X</button>
         </div>
         )
     })}
-            </div>
+            </>
         </div>
     )
 }
