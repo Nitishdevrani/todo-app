@@ -1,11 +1,14 @@
 import React from "react";
+import Todo from "./Todo";
+import Hoc from "../../HOC";
+import './todo.css';
 
-function index() {
+const index = () => {
   return (
-    <div className='container text-center'>
-      <h1>Welcome The Dashboad!</h1>
+    <div className='TodoBlock'>
+      <h1>Todo!</h1>
+      <Hoc comp={Todo} />
     </div>
   );
 }
-
 export default index;
